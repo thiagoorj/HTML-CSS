@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+
+        body{
+            background-color: lightgray;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+      
+        h1 > p{
+            background-color: grey;
+        }
+        
+        nav{
+            background-color: grey;
+            color: black;
+            margin: 10px;
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.432);
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.404);
+        }
+        a{
+            background-color: grey;
+            margin: 10px;
+            text-align: left;
+        }
+        a:hover{
+            color: brown;            
+        }
+        article {
+            background-color: white;
+            padding: 5px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+       article > p{
+            text-align: justify;
+            text-indent: 30px;
+            background-color: white;
+            padding: 0px;
+            border: 0px;
+        }
+        article > h2{
+            background-color: lightgrey;
+        }
+        aside > p{
+            background-color: lightgrey;            
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Novo Esporte</h1>
+        <nav>                          
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+                
+        </nav>       
+
+    </header>
+    <main>
+        <section id="assunto">
+            <article>
+                <h2>Esportes Política Tecnologia</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur veniam cum earum magnam voluptatum necessitatibus minima quibusdam neque odio! Natus, sit. Autem possimus consequatur
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis doloribus qui neque quisquam, laboriosam impedit. Impedit animi architecto, quia possimus culpa praesentium dolores 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti voluptatibus velit corporis aspernatur perferendis quasi dignissimos a architecto eaque modi fugiat quaerat, praesentium dolorem quis, 
+                vel expedita soluta dolorum eius. nesciunt molestiae. Quasi illum saepe delectus labore! dolores cupiditate deleniti adipisci odit quam.</p>
+
+            </article>
+            
+        </section>
+         <section id="noticias">
+             <article>
+                <h2>Janela de Transferência</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Culpa amet, eveniet neque quisquam eos molestiae quo natus sequi accusamus beatae libero ipsa cum atque at aspernatur nam praesentium repellat mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, saepe ullam, perspiciatis error debitis accusantium esse autem, deserunt soluta dolores distinctio laboriosam enim minus impedit nemo dolorem. Laborum, in officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum soluta repellat suscipit. Rem delectus expedita nesciunt totam animi impedit asperiores
+                     architecto quaerat, fugiat quae cum incidunt blanditiis quam hic?
+                </p>
+                <aside>
+                    <p>Artigo escrito por José Manoel</p>
+                </aside>
+             </article>
+
+         </section>   
+    </main>
+    <footer>
+        <p id="rodape">Desenvolvido por Thiago</p>
+    </footer>
+</body>
+</html>
