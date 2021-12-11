@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        th.topo{
+            background-color: rgba(128, 128, 128, 0.596);
+            padding: 20px;
+            font-size: 2em;
+            text-align: center;
+            
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 2px solid blue;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        td.qtd{
+            color: blue;
+            text-align: center;
+        }
+        td.preco{
+            color: red;
+            text-align: center;
+        }
+        td.nomes{
+            background-color: yellow;
+            font-style: italic;
+            text-align: left;
+        }
+        tr.l1{
+            background-color: lightgray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- HIERARQUIA DE TABELA
+                TABLE = TABELA
+                    TABLE ROW = LINHA DE TABELA
+                        TABLE READER = CABEÇALHO DE TABELA
+                        TABLE DATA = DADOS DA TABELA
+
+        -->
+    <table>
+        <th class="topo" colspan="3">Tabela de Produtos</th>
+        
+        <tr class="l1"> <!-- TOPO TABELA-->
+            <td>Nome</td>
+            <td>Quantidade</td>
+            <td>Preço</td>
+        </tr>
+        <tr> <!-- Primeira linha-->
+            <td class = "nomes">Mouse</td>
+            <td class="qtd">5</td>
+            <td class="preco">R$ 30,00</td>
+        </tr>
+        <tr> <!-- Segunda linha-->
+            <td class = "nomes">Teclado</td>
+            <td class="qtd">2</td>
+            <td class="preco">R$ 40,00</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td class = "nomes">Monitor</td>
+            <td class="qtd">3</td>
+            <td class="preco">R$ 350,00</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td class = "nomes">Webcam</td>
+            <td class="qtd">10</td>
+            <td class="preco">R$ 100,00</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td class = "nomes">Estabilizador</td>
+            <td class="qtd">16</td>
+            <td class="preco">R$ 80,00</td>
+        </tr>
+    </table>
+</body>
+</html>
